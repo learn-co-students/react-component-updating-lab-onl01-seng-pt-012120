@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from "react";
 
-class Timer extends PureComponent {
+class Timer extends Component {
   constructor() {
     super();
     this.timer = React.createRef();
@@ -23,7 +23,7 @@ class Timer extends PureComponent {
     }
     return true
   }
-
+  
   componentDidMount() {
     this.interval = setInterval(
       this.clockTick,
